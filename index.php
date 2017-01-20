@@ -8,17 +8,28 @@
     <h1>Home</h1>
    	<h1><a href="contact.php"> contact us </a></h1>
    	<br><br>
- </body>
-</html>
 
-<?php require_once 'connect.php'; ?>
+
+
 
 <?php
+require 'connect.php';
 
-$section = file_get_contents('./mes.txt', true);
-echo "<pre>";
-echo($section);
-echo "</pre>";
+$result = mysqli_query($link,"SELECT * FROM `message` ");
+mysqli_close($link);
 
 
-?>
+//echo $row['name'];
+
+while ($row = mysqli_fetch_array($result))
+{   ?>
+
+<h1><?php echo $row['name'];?></h1>
+	<p><?php echo $row['mail'];?></p>
+	<p><?php echo $row['description'];?></p>
+
+ <?php  }   ?>
+
+
+ </body>
+</html>

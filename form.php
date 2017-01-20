@@ -18,43 +18,14 @@ $mail = ($_POST['mail']);
 $description = ($_POST['description']);
 
 
-
-//mysql_query(" INSERT INTO `message` ('name', 'mail', 'description') VALUES ('$name','$mail','$description')	");
-
-//mysql_query("INSERT INTO message ('name', 'mail', 'description') 		VALUES ('$name','$mail','$description')       ");
-
-
-mysql_query("INSERT INTO `message` (`name`, `mail`, `description`) 
-			VALUES ($name, $mail, $description);"
+mysqli_query($link,"INSERT INTO `message` (`name`, `mail`, `description`) 
+			VALUES ('$name', '$mail', '$description');"
 	);
 
 
 
-mysql_close();
-
-echo $name, $mail, $description;
-
-
-//echo "message sent";
-
-//$text = "";
-//$text .= "имя: $name \r\n"; 
-//$text .= "Почта: $mail \r\n"; 
-//$text .= "Сообщение: $description \r\n";
-//$text .= " \r\n";
-//if (!empty($name) && !empty($mail) && !empty($description)) 
-//{
-//	$file = fopen ('mes.txt', 'a+'); 
-//    fwrite ($file,$text); 
-//    fclose ($file); 
-// };
-//header("Location: index.php");
-
-
-
-
-	
-//header("Location: index.php");
+mysqli_close($link);
+header("Location: index.php");
 
 ?>
 
