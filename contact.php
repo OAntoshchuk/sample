@@ -7,7 +7,7 @@
  <body>
 
 	<h1>contact us</h1>
-  	<h1> <a href="index.php"> home </a></h1>
+  	<h1> <a href="home.php"> home </a></h1>
 
   			
 		  <form action="form.php" method="POST">
