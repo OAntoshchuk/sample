@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>form</title>
-<meta charset="utf-8">
-</head>
- 
-<body>
-
-
 <?php 
 
 require_once ( 'connect.php' );
@@ -28,9 +18,3 @@ mysqli_close($link);
 header("Location: index.php?page=home");
 
 ?>
-
-
-
-
-</body>
-</html>
