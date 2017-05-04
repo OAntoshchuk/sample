@@ -6,8 +6,8 @@
    </head>
  <body>
 
-	<h1>contact us</h1>
-  	<h1> <a href="home.php"> home </a></h1>
+	<h1>CHECK 'contact us' FORM</h1>
+  	<h1> <a href="index.php?page=home"> <<< return home page</a></h1>
 
   			
 		  <form action="form.php" method="POST">

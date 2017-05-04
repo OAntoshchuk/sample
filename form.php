@@ -25,7 +25,7 @@ mysqli_query($link,"INSERT INTO `message` (`name`, `mail`, `description`)
 
 
 mysqli_close($link);
-header("Location: index.php");
+header("Location: index.php?page=home");
 
 ?>
 
