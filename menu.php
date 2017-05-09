@@ -14,19 +14,9 @@
 <?php
 require 'connect.php';
 
-//$in = ($_GET['in']);
-//if($in =='contact'){
-//header("Location: contact.php");
-//}
-
-
-
-
 $result = mysqli_query($link,"SELECT * FROM `message` ");
 mysqli_close($link);
 
-
-//echo $row['name'];
 
 while ($row = mysqli_fetch_array($result))
 {   ?>

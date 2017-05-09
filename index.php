@@ -12,11 +12,11 @@
  				switch ($page) {
 		 			case 'home':
 		 				include 'home.php';
-		 				//break;
+		 				break;
 		 			
 		 			case 'contact':
 		 				include 'contact.php';
-		 				//break;
+		 				break;
 		 			} 		
  ?>
 
